@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .App {
   text-align: center;
 }
@@ -6,6 +7,27 @@
   height: 40vmin;
   pointer-events: none;
 }
+/* App.css */
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms, transform 500ms;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +57,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav{
+  display:flex;
+  width:auto;
+  height: 7vh;
+  z-index: 999;
+  column-gap: 5px;
+  padding: 5px;
+  background-color: #f4f1e8;
+  
+}
+
+.sec{
+  width: 25vw;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  height: 7vh;
+border-radius: 10rem;  
+background-color: #9b194c;
+font-family: "Roboto", sans-serif;
+  font-weight:lighter;
+  text-align: center;
+  border-width: 0;
+  color: #f4f1e8;
+  font-size: medium;
+  cursor: pointer;
+
+}
+
+.sec:hover{
+  font-weight:lighter;
+  background-color: #6d1237;
 }

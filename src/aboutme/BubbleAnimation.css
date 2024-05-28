@@ -1,0 +1,56 @@
+/* src/BubbleAnimation.css */
+
+.bubble-container {
+    z-index: 999;
+    position: absolute;
+    display:flex;
+   
+  }
+  
+  .bubble {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .bubble1 {
+    z-index:100;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    width: 100px;
+    height: 100px;
+    bottom: 10%;
+  }
+  
+  .bubble2 {
+    animation-duration: 8s;
+    animation-delay: 2s;
+    width: 50px;
+    height: 50px;
+    right: 40%;
+  }
+  
+  .bubble3 {
+    animation-duration: 10s;
+    animation-delay: 4s;
+    width: 200px;
+    height: 200px;
+    right: 5%;
+    bottom: 10%;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,8 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Radley:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 #intro {
-    background-color: black;
+    background: #F4F1E8;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     
     margin: 0 auto;
     overflow: hidden;
@@ -11,20 +13,17 @@
 
 .introtext{
     z-index:2;
-}
-.photo{
-    position: absolute;
-    z-index: 1;
-    top: 2rem;
-    right: 0;
-    border:0cap;
-    border-radius: 50%;
-    margin-left: 0%;
-    padding: 0%;
-    object-fit: cover;
-    height: 70vh;
+    font-family: "Radley", serif;
+  font-weight: 400;
+  font-style: italic;
+  color:#191919;
+  text-align: center;
+  font-size: 4.5rem;
+  align-items: center;
+
 
 }
+
 
 .content{
     z-index: 2;
@@ -37,33 +36,79 @@
     flex-direction: column;
     justify-content: center;
     color: white;
+    text-align: center;
 }
 
 .hello{
     z-index: 2;
     font-size: 1.75rem;
     font-weight: 100;
+    font-family: "Carlito", sans-serif;
+    color:#ffe998;
+  font-style: normal;
+
+
 }
 
 .introname{
+    font-family: "Radley", serif;
+  font-weight: 400;
+  font-style: normal;
     z-index: 2;
-    color:yellow;
+    color: #9B194C;
 }
 
 .intropara{
     z-index: 2;
-    font-size:medium;
-    font-weight: 100;
+    font-size:large;
+    width: 50%;
+    font-weight: 300;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: "Roboto", sans-serif;
+    color: #191919;
+  font-style: normal;
+
 }
+
 .btn{
-    z-index: 2;
-    background: white;
-    color:black;
+    z-index: 990;
+    background: #191919;
+    color:#F4F1E8;
     margin: 1rem 0;
-    padding: 0.75rem 2rem;
+    padding: 0.5rem 1rem;
     border:none;
-    font-size:medium;
+    font-size:small;
     font-weight:400;
     border-radius: 2rem;
+    font-family: "Carlito", sans-serif;
     cursor: pointer;
 }
+.buton{
+    z-index: 990;
+}
+
+@media screen and (max-width:840px) {
+    .photo{
+        right:-10vw;
+    }
+
+    .content{
+        font-size:8vw;
+    }
+    .hello{
+        font-size:4.5vw;
+    }
+    .intropara{
+        font-size: 3vw;
+        right:2vw
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .photo{
+        right:-20vw;
+    }
+
+} 
